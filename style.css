@@ -43,7 +43,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
   .container {
@@ -54,22 +53,78 @@ h1 {
     justify-content: center;
     align-content: space-around;
     align-items: center;
-    padding: 30px;
   }
 
- .grid-container {
+  .row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: -12px -6px 12px;
+    padding: 0;
+}
+
+  /* LOGO */
+  .blackbeans-logo img {
+    display: flex;
     width: 100%;
     height: 100%;
   }
 
+
+  /* TOUR DATES SECTION */
   .tour-dates-container {
-      
+    border: solid 3px #2c3531;
+    padding: 10px;
+    margin-top: 109px;
+    margin-bottom: 116px;
+    width: 100%;
+    max-width: 708px;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
   }
-  /* logo */
-  .blackbeans-logo img {
-      display: flex;
-      width: 100%;
-    height: 100%;
+
+  .title-tour-dates {
+    color: #ffcb9a;
+    font-size: 2rem;
+  }  
+
+  .show, .shows-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: auto;
+    width: 100%;
+    line-height: 10px;
+  }
+
+  .show-date-venue {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #d1e8e2;
+  }
+
+  .date-numbers {
+    color: #ffcb9a;
+    font-weight: 700;
+
+  }
+
+  .date-numbers, .venue {
+    padding: 10px;
+  }
+
+  .venue {
+    color: #d1e8e2;
+  }
+
+  .venue-city {
+    font-weight: 700;
   }
 
   /* ALBUM FLIP-CARD SECTION */

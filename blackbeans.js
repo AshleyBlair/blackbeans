@@ -1,3 +1,5 @@
+// Video player
+
 // get our elements
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
@@ -56,3 +58,20 @@ progress. addEventListener('mousemove', (e) => mousedown && scrub(e));
 
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
+
+// KEY SEQUENCE DETECTION
+const pressed = [];
+const secretCode = 'spicey';
+
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+  console.log(pressed);
+
+  if (pressed.join('').includes(secretCode)) {
+    console.log('DING DING!');
+    cornify_add();
+  }
+  console.log(pressed);
+});
