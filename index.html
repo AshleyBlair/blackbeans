@@ -4,59 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Black Beans Heavy Metal Band</title>
 </head>
 <body>
     <div class="bg-img">
             <!-- NAVIGATION BAR -->
-         <div class="header">
-            <div class="header-left">
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">Menu</span>
-                    </i>
-                </button>
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">About</span>
-                    </i>
-                </button>
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">Shows</span>
-                    </i>
-                </button>
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">Albums</span>
-                    </i>
-                </button>
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">Gallery</span>
-                    </i>
-                </button>
-                <button class="menu-toggle">
-                    <i class="menu-white-icon">
-                        <span class="visually-hidden">Videos</span>
-                    </i>
-                </button>
-            </div>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
+        <ul class="topnav">
+            <li><a class="navbuttons" href="index.html">Home</a></li>
+            <li><a href="#tour-dates">Tour Dates</a></li>
+            <li><a href="#albums">Albums</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#merch">Merch</a></li>
+            <li ><a href="#contact">Contact</a></li>
+            <li class="social">
+                <a href="https://www.instagram.com/hey_big__man/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.instagram.com/hey_big__man/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.instagram.com/hey_big__man/">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.instagram.com/hey_big__man/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+        
     
     <!-- LOGO -->
-    <div class="container blackbeans-logo">
+    <div class="container">
+        <div class="container blackbeans-logo">
             <img src="./imgs/Black-Beans-Logo.png" alt="Aggressive Biscuits album cover">
             <div class="description-img">
                 <img src="./imgs/BBDescriptionTwoLines" alt="">
             </div>
             
         </div>  
-    <!-- TOUR DATES SECTION -->    
-            <div class="tour-dates-container">
+    <!-- TOUR DATES SECTION -->  
+        <!-- <img class="tour-bg-img" src="./imgs/litterbg.png" alt=""> -->
+<div id="tour-dates" class="tour-dates-container">  
                 <div class="title-tour-dates">
                     <p>TOUR DATES</p>
                 </div>
@@ -192,10 +187,10 @@
                             </div>
                         </div>
                 </div>
-            </div>
+        </div>
     <!-- ALBUM CARD SECTION -->
         <div class="container">
-            <div class="flip-card-container">
+            <div id="albums" class="flip-card-container">
                 <div class="flip-card">
                     <div class="flip-card-front">
                         <img src="./imgs/aggressiveBiscuitsAlbumCoverTILE.png" alt="Aggressive Biscuits album cover">
@@ -215,30 +210,65 @@
                     </div>
                 </div>
             </div>
-        </div>
-       
-    <!-- VIDEO PLAYER SECTION -->
+        </div>  
+    </div>
+            
+<!-- MERCH SECTION -->
         <div class="container">
-            <div class="player">
-                <video class="player__video viewer" src="Aggressive Biscuits.mp4"></video>
-                <div class="player__controls">
-                    <div class="progress">
-                     <div class="progress__filled"></div>
-                    </div>
-                    <button class="player__button toggle" title="Toggle Play">►</button>
-                    <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
-                    <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
-                    <button data-skip="-10" class="player__button">« 10s</button>
-                    <button data-skip="25" class="player__button">25s »</button>
+            <div id="merch" class="merch">
+                <h1>This is the Merch Section</h1>
+            </div>
+        </div>
+
+    <!-- VIDEO PLAYER SECTION -->
+    <div class="container">
+        <div id="video" class="player">
+            <video class="player__video viewer" src="Aggressive Biscuits.mp4"></video>
+            <div class="player__controls">
+                <div class="progress">
+                 <div class="progress__filled"></div>
                 </div>
+                <button class="player__button toggle" title="Toggle Play">►</button>
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
             </div>
         </div>
     </div>
-    
-     
-  
-    
-    
+ <!-- CONTACT INFO SECTION -->    
+        <div class="container">
+            <div id="contact" class="contact-info">
+                <div style="text-align:center">
+                    <h2>Contact Us</h2>
+                    <p>No one will respond to you, but you do whatever makes you feel better.</p>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <img src="./imgs/humpTree.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname"             placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname"   placeholder="Your last name..">
+                        <label for="country">Country</label>
+                            <select id="country" name="country">
+                            <option value="usa">USA</option>
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                      </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>  
    <script src="blackbeans.js"></script>
    <!-- script tag that connects the cornify.js-->
    <!-- <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script> -->
