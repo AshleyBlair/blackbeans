@@ -68,7 +68,7 @@ html {
   }
   
   li {
-    flex: 3;
+    flex: 1;
     /* display: inline; */
     float: left;
   }
@@ -86,7 +86,7 @@ html {
       flex-wrap:wrap;
     }
     ul.topnav li {
-      flex: 1 1 50%;
+      flex: 1 1 16%;
     }
   }
 
@@ -106,6 +106,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    color: #d1e8e2;
 }
 
   .container {
@@ -167,8 +168,8 @@ h1 {
     z-index: 1;
     position: relative;
     flex-direction: column;
-    background-image: url(./imgs/litterbg.png);
-    background-size: cover;
+    background-image: url(./imgs/paw.png);
+    background-size: .5rem;
     text-align: center;
   }
   .tour-bg-img {
@@ -176,6 +177,7 @@ h1 {
     width: 100%;
     height: auto;
     display: block;
+    background-repeat: repeat;
   } 
 
   .title-tour-dates {
@@ -474,3 +476,62 @@ h1 {
     }
   }
   
+  /* SLIDER SECTION */
+  .slides {
+    width: 700px;
+    height: 500px;
+    border:2px solid black;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    background: #d1e8e2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    font-family: sans-serif;
+    border: 5px solid white;
+    transition: all .25s;
+    transform: translateX(-200%);
+  }
+
+  .slide-img {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .slide.next + .slide {
+    transform: translateX(200%);
+  }
+
+  .slide.prev {
+    z-index: 10;
+    transform: translateX(-100%);
+  }
+  
+  .slide.current {
+    z-index: 10;
+    transform: translateX(0);
+  }
+
+  .slide.next {
+    z-index: 10;
+    transform: translateX(100%);
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
